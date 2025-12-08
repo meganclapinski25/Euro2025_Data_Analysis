@@ -64,3 +64,38 @@ def clean_compactness(
         compactness_clean["players_involved"] >= min_players
     ]
     return compactness_clean
+
+def team_compactness_summary(compactness_clean: pd.DataFrame) -> pd.DataFrame:
+    """
+    Summarise compactness by team.
+
+    Mirrors your notebook logic:
+
+        team_summary = (
+            compactness_clean
+                .groupby('team')
+                .agg(
+                    avg_radius=('compactness_radius','mean'),
+                    std_radius=('compactness_radius','std'),
+                    avg_x_std=('x_std','mean'),
+                    avg_y_std=('y_std','mean'),
+                    avg_players=('players_involved','mean')
+                )
+                .round(2)
+                .sort_values('avg_radius')
+        )
+    """
+    team_summary = (
+        compactness_clean
+        .groupby("team")
+        .agg(
+            avg_radius=("compactness_radius", "mean"),
+            std_radius=("compactness_radius", "std"),
+            avg_x_std=("x_std", "mean"),
+            avg_y_std=("y_std", "mean"),
+            avg_players=("players_involved", "mean"),
+        )
+        .round(2)
+        .sort_values("avg_radius")
+    )
+    return team_summary
