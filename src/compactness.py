@@ -1,5 +1,80 @@
 import numpy as np
 import pandas as pd
+from scipy.spatial import ConvexHull
+
+
+def _convex_hull_area(points: np.ndarray) -> float:
+    """
+    Compute the convex hull area for a set of 2D points (x, y).
+
+    Parameters
+    ----------
+    points : np.ndarray
+        Array of shape (n_points, 2) representing player positions.
+
+    Returns
+    -------
+    float
+        Area of the convex hull enclosing the points.
+        Returns NaN if fewer than 3 points are provided.
+    """
+    if len(points) < 3:
+        return np.nan
+
+    hull = ConvexHull(points)
+    return float(hull.area)
+
+
+def compute_space_control(
+    df: pd.DataFrame,
+    group_cols: list[str] | None = None,
+) -> pd.DataFrame:
+    """
+    Compute team space control using convex hull area.
+
+    Space control represents the total area occupied by a team's
+    positional structure on the pitch.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        DataFrame containing at least:
+          - 'x', 'y' player coordinates
+          - grouping columns such as 'match_id', 'team', 'phase'
+
+    group_cols : list[str] | None, optional
+        Columns to group by before computing space control.
+        If None, the function automatically uses available columns
+        from ['match_id', 'team', 'phase'].
+
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame with one row per group and a 'space_control' column.
+    """
+
+    # Decide grouping columns automatically if none provided
+    if group_cols is None:
+        candidate_cols = ["match_id", "team", "phase"]
+        group_cols = [c for c in candidate_cols if c in df.columns]
+
+    # Remove rows without valid spatial coordinates
+    base = df.dropna(subset=["x", "y"]).copy()
+
+    # Compute convex hull area per group
+    space_control = (
+        base
+        .groupby(group_cols, as_index=False)
+        .apply(
+            lambda group: _convex_hull_area(
+                group[["x", "y"]].to_numpy()
+            ),
+            include_groups=False
+        )
+        .rename(columns={None: "space_control"})
+    )
+
+    return space_control
 
 
 def compute_compactness(
