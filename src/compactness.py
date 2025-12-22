@@ -7,16 +7,6 @@ def _convex_hull_area(points: np.ndarray) -> float:
     """
     Compute the convex hull area for a set of 2D points (x, y).
 
-    Parameters
-    ----------
-    points : np.ndarray
-        Array of shape (n_points, 2) representing player positions.
-
-    Returns
-    -------
-    float
-        Area of the convex hull enclosing the points.
-        Returns NaN if fewer than 3 points are provided.
     """
     if len(points) < 3:
         return np.nan
@@ -35,22 +25,6 @@ def compute_space_control(
     Space control represents the total area occupied by a team's
     positional structure on the pitch.
 
-    Parameters
-    ----------
-    df : pd.DataFrame
-        DataFrame containing at least:
-          - 'x', 'y' player coordinates
-          - grouping columns such as 'match_id', 'team', 'phase'
-
-    group_cols : list[str] | None, optional
-        Columns to group by before computing space control.
-        If None, the function automatically uses available columns
-        from ['match_id', 'team', 'phase'].
-
-    Returns
-    -------
-    pd.DataFrame
-        DataFrame with one row per group and a 'space_control' column.
     """
 
     # Decide grouping columns automatically if none provided
@@ -84,8 +58,7 @@ def compute_compactness(
     """
     Compute compactness metrics grouped by the given columns.
 
-    This mirrors your notebook logic:
-
+    Oringial Code: 
         compactness_base = df.dropna(subset=['player'])
         compactness = (
             compactness_base.groupby(['team','phase','possession'], as_index=False)
@@ -144,7 +117,7 @@ def team_compactness_summary(compactness_clean: pd.DataFrame) -> pd.DataFrame:
     """
     Summarise compactness by team.
 
-    Mirrors your notebook logic:
+    Oringial Code: 
 
         team_summary = (
             compactness_clean

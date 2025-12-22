@@ -10,7 +10,7 @@ def plot_avg_team_compactness(
     """
     Plot average compactness_radius per team as a horizontal bar chart.
 
-    Mirrors notebook logic:
+    Oringial Code: 
 
         avg_team = compactness_clean.groupby('team')['compactness_radius'].mean().sort_values()
         fig, ax = plt.subplots(...)
