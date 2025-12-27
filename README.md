@@ -53,8 +53,3 @@ comparison by quantifying how teams organize themselves beyond on-ball events.
 - statsbombpy
 - mplsoccer
 
----
-
-This project is intended as a **portfolio piece** demonstrating exploratory analysis,
-metric design, and clear communication of insights for **entry-level and intern data
-analysis roles**.
