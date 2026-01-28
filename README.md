@@ -37,17 +37,19 @@ comparison by quantifying how teams organize themselves beyond on-ball events.
 ## Visual Highlights
 
 ### ⚽ Team Spatial Structure by Phase (In Possession vs Defending) 
-![Belgium — In Possession vs Defending](visuals/beloff.png)
-![(visuals/belgdef.png)0]
+![Belgium —  Defending](visuals/belgdef.png)
 
+![Germany — Defending](visuals/germanydef.png)
 
-![Germany — In Possession vs Defending](visuals/germanypos.png)(visuals/germanydef.png)
+### 📏 Team Compactness Across the Tournament
+![Feature Correlation](visuals/avgteamOverall.png)
 
-### 📈 Key Swing Metrics Correlated with Home Runs
-![Feature Correlation](images/correlation.png)
+### 🔁 Compactness by Phase of Play
+![Feature Weights](visuals/avgteambyPhase.png)
 
-### 🔍 Model Interpretation: Feature Weights
-![Feature Weights](images/weights.png)
+### 🧭 Space Control & Tactical Expansion by Team
+![Feature Weights](visuals/downloads.png)
+
 ---
 
 
