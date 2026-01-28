@@ -48,7 +48,7 @@ comparison by quantifying how teams organize themselves beyond on-ball events.
 ![Feature Weights](visuals/avgteambyPhase.png)
 
 ### 🧭 Space Control & Tactical Expansion by Team
-![Feature Weights](visuals/downloads.png)
+![Feature Weights](visuals/downloaded.png)
 
 ---
 
