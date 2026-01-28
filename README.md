@@ -34,6 +34,22 @@ comparison by quantifying how teams organize themselves beyond on-ball events.
 
 ---
 
+## Visual Highlights
+
+### ⚽ Team Spatial Structure by Phase (In Possession vs Defending) 
+![Belgium — In Possession vs Defending](visuals/beloff.png)(visuals/belgdef.png)
+
+
+![Germany — In Possession vs Defending](visuals/germanypos.png)(visuals/germanydef.png)
+
+### 📈 Key Swing Metrics Correlated with Home Runs
+![Feature Correlation](images/correlation.png)
+
+### 🔍 Model Interpretation: Feature Weights
+![Feature Weights](images/weights.png)
+---
+
+
 ## Project Contents
 
 - `notebooks/data_load.ipynb` – Main analysis notebook with visualizations and interpretations
