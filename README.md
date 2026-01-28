@@ -53,7 +53,7 @@ Pitch-level visualizations showing how teams **expand in possession** and **cont
 
 | In Possession | Defending |
 |-------------|-----------|
-| ![Germany In Possession](visuals/germanypos.png) | ![Germany Defending](visuals/germanydeeef.png) |
+| ![Germany In Possession](visuals/germanydef.png) | ![Germany Defending](visuals/germanydeeef.png) |
 
 
 
