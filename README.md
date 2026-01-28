@@ -36,19 +36,36 @@ comparison by quantifying how teams organize themselves beyond on-ball events.
 
 ## Visual Highlights
 
-### ⚽ Team Spatial Structure by Phase (In Possession vs Defending) 
-![Belgium —  Defending](visuals/belgdef.png)
+### ⚽ Team Spatial Structure by Phase (In Possession vs Defending)
+Pitch-level visualizations showing how teams **contract defensively** and **expand in possession** using player centroids and compactness radii.
 
-![Germany — Defending](visuals/germanydef.png)
+**Belgium — Defending**
+![Belgium Defending Shape](visuals/beldef.png)
+
+**Germany — Defending**
+![Germany Defending Shape](visuals/germanydef.png)
+
+---
 
 ### 📏 Team Compactness Across the Tournament
-![Feature Correlation](visuals/avgteamOverall.png)
+Comparison of **average team compactness** across all teams, highlighting overall differences in spatial organization.
+
+![Average Team Compactness](visuals/avgteamOverall.png)
+
+---
 
 ### 🔁 Compactness by Phase of Play
-![Feature Weights](visuals/avgteambyPhase.png)
+Teams are consistently **more compact when defending** and **expand in possession**, regardless of team identity.
+
+![Compactness by Phase](visuals/avgteambyPhase.png)
+
+---
 
 ### 🧭 Space Control & Tactical Expansion by Team
-![Feature Weights](visuals/downloaded.png)
+Comparing how much **space teams control** between defending and attacking phases, revealing stylistic differences rather than performance outcomes.
+
+![Space Control by Phase](visuals/download.png)
+
 
 ---
 
