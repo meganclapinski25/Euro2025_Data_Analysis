@@ -37,7 +37,8 @@ comparison by quantifying how teams organize themselves beyond on-ball events.
 ## Visual Highlights
 
 ### ⚽ Team Spatial Structure by Phase (In Possession vs Defending) 
-![Belgium — In Possession vs Defending](visuals/beloff.png)(visuals/belgdef.png)
+![Belgium — In Possession vs Defending](visuals/beloff.png)
+![(visuals/belgdef.png)0]
 
 
 ![Germany — In Possession vs Defending](visuals/germanypos.png)(visuals/germanydef.png)
