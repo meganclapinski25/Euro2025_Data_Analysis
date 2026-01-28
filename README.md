@@ -40,7 +40,7 @@ comparison by quantifying how teams organize themselves beyond on-ball events.
 Pitch-level visualizations showing how teams **contract defensively** and **expand in possession** using player centroids and compactness radii.
 
 **Belgium — Defending**
-![Belgium Defending Shape](visuals/beldef.png)
+![Belgium Defending Shape](visuals/belgdef.png)
 
 **Germany — Defending**
 ![Germany Defending Shape](visuals/germanydef.png)
