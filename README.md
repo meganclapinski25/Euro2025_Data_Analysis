@@ -43,7 +43,7 @@ Pitch-level visualizations showing how teams **contract defensively** and **expa
 ![Belgium Defending Shape](visuals/belgdef.png)
 
 **Germany — Defending**
-![Germany Defending Shape](visuals/germanydef.png)
+![Germany Defending Shape](visuals/germanypos.png)
 
 ---
 
