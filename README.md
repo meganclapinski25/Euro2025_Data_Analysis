@@ -50,7 +50,7 @@ Pitch-level visualizations showing how teams **contract defensively** and **expa
 ![Germany Possession Shape](visuals/germanydef.png)
 
 **Germany — Defending**
-![Germany Defensive Shape](visuals/germanydeeef.png)
+![Germany Defensive Shape](visuals/germanydeeeef.png)
 
 
 
