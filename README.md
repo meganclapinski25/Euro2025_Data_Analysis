@@ -1,13 +1,8 @@
 # Spatial Structure and Tactical Style in the UEFA Women’s Euro 2025
 
-This project analyzes team spatial organization during the UEFA Women’s Euro 2025 using
-event-level StatsBomb data. The goal is to understand how teams structure themselves on the
-pitch across different phases of play and what those spatial patterns reveal about tactical
-style.
+This project analyzes team spacing, compactness, and space control in the UEFA Women’s Euro 2025 using event-level StatsBomb data. Instead of relying on traditional box-score stats (passes, shots, goals), this analysis focuses on how teams organize themselves spatially across different phases of play.
 
-Rather than focusing on traditional event counts (passes, shots, duels), this analysis
-introduces spatial metrics that quantify **team shape**, **compactness**, and **space usage**
-during attacking and defensive phases.
+The goal is to understand how teams play — not just how often they score or win.
 
 ---
 
