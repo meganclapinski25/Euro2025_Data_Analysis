@@ -37,13 +37,22 @@ comparison by quantifying how teams organize themselves beyond on-ball events.
 ## Visual Highlights
 
 ### ⚽ Team Spatial Structure by Phase (In Possession vs Defending)
+
 Pitch-level visualizations showing how teams **contract defensively** and **expand in possession** using player centroids and compactness radii.
 
+**Belgium — In Possession**
+![Belgium Possession Shape](visuals/beloff.png)
+
 **Belgium — Defending**
-![Belgium Defending Shape](visuals/belgdef.png)
+![Belgium Defensive Shape](visuals/belgdef.png)
+
+**Germany — In Possession**
+![Germany Possession Shape](visuals/germanydef.png)
 
 **Germany — Defending**
-![Germany Defending Shape](visuals/germanypos.png)
+![Germany Defensive Shape](visuals/germanypos.png)
+
+
 
 ---
 
