@@ -46,6 +46,8 @@ Pitch-level visualizations showing how teams **contract defensively** and **expa
 **Belgium — Defending**
 ![Belgium Defensive Shape](visuals/belgdef.png)
 
+---
+
 **Germany — In Possession**
 ![Germany Possession Shape](visuals/germanydef.png)
 
