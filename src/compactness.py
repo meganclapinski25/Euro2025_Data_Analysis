@@ -12,7 +12,7 @@ def _convex_hull_area(points: np.ndarray) -> float:
         return np.nan
 
     hull = ConvexHull(points)
-    return float(hull.area)
+    return float(hull.volume)
 
 
 def compute_space_control(
